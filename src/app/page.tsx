@@ -1,7 +1,8 @@
-import Image from "next/image";
+
 import Header from "./components/Header";
 import Footer from "./components/footer";
-import CardDetails, { Hero } from "./components/hero";
+import CardDetails, { Hero, Hero1 } from "./components/hero";
+
 
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
   <Header/>
   <CardDetails/>
   <Hero/>
+  <Hero1/>
   <Footer/>
   
   

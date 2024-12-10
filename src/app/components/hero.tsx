@@ -47,14 +47,54 @@ const CardDetails = () =>{
 
   export const Hero = () => {
     return(
-        <div>
-             <Image src= "/bigsofa.png" alt="big" width={800} height={800} className="ml-[10px]"/> 
 
-            <div>
-                <h2 className='w-[149px] h-[36px]  text-[24px] text-center sm:text-left ml-[920px] text-[#000000]  font-poppins'>New Arrivals</h2>
-                <p className='w-[331px] h-[72px] text-[48px] text-center sm:text-left  ml-[850px] font-poppins text-[#000000]'>Asgaard sofa</p>
-                <button className='w-[106px] h-[30px] ml-[850px] text-center sm:text-left  text-[20px] font-poppins text-[#000000]'>Order Now</button>
-            </div>
+        <div className="flex flex-col md:flex-row items-center gap-8 p-8">
+      {/* Left Side - Image */}
+      <div className="flex-1">
+        <Image
+          src="/bigsofa.png" // Replace with your image path
+          alt="New Arrival Image"
+          width={500} // Adjust width as needed
+          height={500} // Adjust height as needed
+          className="w-full h-auto"
+        />
+      </div>
+
+      {/* Right Side - Text and Button */}
+      <div className="flex-1 text-center md:text-left">
+        <h2 className="text-lg text-[#000000] font-bold mb-4">New Arrival</h2>
+        <p className="text-4xl text-[#000000] mb-6">Asgraad Sofa</p>
+        <button
+          className="w-[50px] h-[20px]  text-[#000000] text-lg font-medium rounded-lg shadow-md"
+        >
+          Order Now
+        </button>
+      </div>
+    </div>
+  );
+};
+
+export const Hero1 = () => {
+    return(
+        <div className="relative bg-cover bg-center min-h-screen" style={{ backgroundImage: "url('/Group 43.png')" }}>
+      <div className="flex items-center justify-center min-h-screen text-center px-4">
+        <div className="bg-black bg-opacity-50 p-8 rounded-lg w-full max-w-lg">
+          <h1 className="text-white text-3xl font-bold mb-4">Our Instagram</h1>
+          <p className="text-white mb-6">Follow our store on Instagram</p>
+          <button className="bg-white text-black py-2 px-4 rounded-md">Follow Us</button>
         </div>
+      </div>
+    </div>
     )
-  }
+}
+
+
+
+
+
+
+
+
+
+
+   

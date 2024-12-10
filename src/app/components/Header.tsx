@@ -16,7 +16,7 @@ const Header = () => {
         <div className="flex gap-4  ml-[150px]  mt-[50px]">
             <ul  className='w-[370px]  h-[24px] flex gap-[48px] text-[#000000]'>
                 <li className='font-poppins text-center font-normal text-[16px] w-[48px] h-[24px]'><Link href="/">Home</Link></li>
-                <li className='font-poppins text-center font-normal text-[16px] w-[48px] h-[24px]' ><Link href="">Shop</Link></li>
+                <li className='font-poppins text-center font-normal text-[16px] w-[48px] h-[24px]' ><Link href="../shop">Shop</Link></li>
                 <li className='font-poppins text-center font-normal text-[16px] w-[48px] h-[24px]'><Link href="../about">About</Link></li>
                 <li className='font-poppins text-center font-normal text-[16px] w-[48px] h-[24px]'><Link href="../contact">Contact</Link></li>
             </ul>

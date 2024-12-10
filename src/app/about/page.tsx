@@ -1,8 +1,12 @@
 import React from 'react';
 import Image from 'next/image';
+
  const Login = () => {
     return (
+      <body className='bg-[#ffffff]'>
+      
         <div>
+          
             <Image src="/abc1.png" alt="abc" width={1000} height={1000} className="w-[1440px] h-[316px]"/>
             
             <div className="flex justify-center items-center h-screen bg-gray-100">
@@ -53,12 +57,18 @@ import Image from 'next/image';
                 Remember me
               </label>
             </div>
+            <div className='flex justify-start items-center p-8'>
             <button
-              type="submit"
-              className="w-full bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 focus:outline-none focus:ring focus:ring-blue-300"
+            type='submit'
+              
+              
+              className="w-full bg-blue-600 text-[#000000] py-2 px-4 rounded hover: bg-white-200 focus:outline-none focus:ring focus:ring-blue-300"
+          
+            
             >
               Log In
             </button>
+            </div>
           </form>
         </div>
 
@@ -92,16 +102,62 @@ import Image from 'next/image';
             </div>
             <button
               type="submit"
-              className= "w-full bg-green-600 text-white py-2 px-4 rounded hover:bg-green-700 focus:outline-none focus:ring "
+              className= "w-full bg-blue-600 text-[#000000] py-2 px-4 rounded hover: bg-white-200 focus:outline-none focus:ring focus:ring-blue-300"
             >
               Register
             </button>
           </form>
         </div>
       </div>
-    </div>           
-                
+      
+
+        </div>
+       
+         {/* Feature Section */}
+    <div className="flex flex-col md:flex-row justify-between items-start gap-8 p-8">
+        {/* Free Delivery Section */}
+        <div className="flex-1 text-left">
+          <h2
+            className="text-[#000000] text-2xl font-bold mb-4"
+            style={{ width: '205px', height: '48px' }}
+          >
+            Free Delivery
+          </h2>
+          <p className='text-[#9F9F9F]'>For all orders over $50 consectetur adipiscing elit.</p>
+        </div>
+
+        {/* 90 Days Return Section */}
+        <div className="flex-1 text-left">
+          <h2
+            className="text-[#000000] text-2xl font-bold mb-4"
+            style={{ width: '205px', height: '48px' }}
+          >
+            90 Days Return
+          </h2>
+          <p className='text-[#9F9F9F]'>If goods have problems consectetur adipiscing elit.</p>
+        </div>
+         {/* Secure Payment Section */}
+         <div className="flex-1 text-left">
+          <h2
+            className="text-[#000000] text-2xl font-bold mb-4"
+            style={{ width: '205px', height: '48px' }}
+          >
+            Secure Payment
+          </h2>
+          <p className='text-[#9F9F9F]'>100% secure payment consectetur adipiscing elit.</p>
+         
+        </div>
+        </div>
+
+    
+          
+   
+           
+        
    </div>
+   </body>
+   
+   
     );
   }
  
