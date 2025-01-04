@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { IoMdContact } from "react-icons/io";
 import { IoIosSearch } from "react-icons/io";
 import { FaRegHeart } from "react-icons/fa";
@@ -6,56 +6,63 @@ import { MdOutlineShoppingCart } from "react-icons/md";
 import Image from 'next/image';
 import Link from 'next/link';
 
-
-
 const Header = () => {
     return (
-        <body className=' bg-[#FBEBB5] mr-6 ml-6'>
-        <div className='flex justify-center '>
+        <div className="bg-[#FBEBB5] px-4 md:px-8 lg:px-16">
+            {/* Navbar */}
+            <div className="flex justify-between items-center py-6">
+                {/* Navigation Links */}
+                <ul className="flex gap-6 md:gap-8 text-[#000000]">
+                    <li className="font-poppins text-[16px]">
+                        <Link href="/">Home</Link>
+                    </li>
+                    <li className="font-poppins text-[16px]">
+                        <Link href="../shop">Shop</Link>
+                    </li>
+                    <li className="font-poppins text-[16px]">
+                        <Link href="../about">About</Link>
+                    </li>
+                    <li className="font-poppins text-[16px]">
+                        <Link href="../contact">Contact</Link>
+                    </li>
+                </ul>
 
-        <div className="flex gap-4  ml-[150px]  mt-[50px]">
-            <ul  className='w-[370px]  h-[24px] flex gap-[48px] text-[#000000]'>
-                <li className='font-poppins text-center font-normal text-[16px] w-[48px] h-[24px]'><Link href="/">Home</Link></li>
-                <li className='font-poppins text-center font-normal text-[16px] w-[48px] h-[24px]' ><Link href="../shop">Shop</Link></li>
-                <li className='font-poppins text-center font-normal text-[16px] w-[48px] h-[24px]'><Link href="../about">About</Link></li>
-                <li className='font-poppins text-center font-normal text-[16px] w-[48px] h-[24px]'><Link href="../contact">Contact</Link></li>
-            </ul>
-            <div className='flex gap-4'>
-                <button className=' pb-[6px] rounded-[4px] text-[#000000]'><IoMdContact className='h-[28px] w-[28px] '/></button>
-                <IoIosSearch className='w-[28px] h-[28px]  text-[#000000]'/>
-                <FaRegHeart className='h-[28px] w-[28px]  text-[#000000]' />
-                <MdOutlineShoppingCart className='h-[28px] w-[28px]  text-[#000000]'/>
+                {/* Icon Buttons */}
+                <div className="flex gap-4">
+                    <button className="text-[#000000]">
+                        <IoMdContact className="h-[24px] w-[24px]" />
+                    </button>
+                    <IoIosSearch className="h-[24px] w-[24px] text-[#000000]" />
+                    <FaRegHeart className="h-[24px] w-[24px] text-[#000000]" />
+                    <MdOutlineShoppingCart className="h-[24px] w-[24px] text-[#000000]" />
+                </div>
+            </div>
 
+            {/* Hero Section */}
+            <div className="flex flex-col lg:flex-row items-center mt-8 gap-8">
+                {/* Left: Text Section */}
+                <div className="text-between lg:text-left">
+                    <p className="font-poppins text-[32px] md:text-[48px] lg:text-[64px] text-[#000000] mb-4">
+                        Rocket single seater
+                    </p>
+                    <h2 className="font-poppins text-[20px] md:text-[24px] text-[#000000]">
+                        Shop Now
+                    </h2>
+                </div>
+
+                {/* Right: Image Section */}
+                <div className="w-full lg:w-auto">
+                    <Image
+                        src="/Rocket single seater 1.png "
+                        alt="chair"
+                        width={200}
+                        height={200}
+                        className="w-full lg:w-[696px] h-auto"
+                    />
+                </div>
             </div>
         </div>
-        </div>
-       
-        <div className="flex items-center mt-[50px] ml-[50px]">
-  {/* Left: Text Section */}
-  <div className="flex flex-col justify-start space-y-4 w-[440px]">
-    <p className="font-poppins text-[64px] text-[#000000]">
-      Rocket single seater
-    </p>
-    <h2 className="font-poppins text-[24px] text-[#000000]">
-      Shop Now
-    </h2>
-  </div>
-
-  {/* Right: Image Section */}
-  <div className="ml-[50px]">
-    <Image
-      src="/chair.jpeg"
-      alt="chair"
-      width={696}
-      height={400}
-      className="w-[696px] h-[400px]"
-    />
-  </div>
-</div>
-
- </body>
-    )
-}
-
+    );
+};
 
 export default Header;

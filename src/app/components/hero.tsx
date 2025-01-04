@@ -1,54 +1,64 @@
 import React from 'react';
-import Card from './card';
+
 import Image from 'next/image';
 
 
 
 
 
+export const ImageSection = () => {
+    return (
+        <div className="flex flex-col items-center justify-center  bg-[#FAF4F4] gap-8 px-4 py-10 md:flex-row md:gap-16">
+            {/* First Image Block */}
+            <div className="flex flex-col items-center">
+                {/* Image */}
+                <Image
+                    src="/table.png"
+                    alt="Side Table 1"
+                    width={300}
+                    height={300}
+                    className="rounded-md object-cover"
+                />
+                {/* Caption */}
+                <p className="text-lg font-semibold text-black mt-4">Side Table</p>
+                <p className="text-sm text-[#9F9F9F] cursor-pointer hover:underline">View More</p>
+                {/* Black Line */}
+                <div className="w-14 h-[2px] bg-black mt-4"></div>
+            </div>
+
+            {/* Second Image Block */}
+            <div className="flex flex-col items-center">
+                {/* Image */}
+                <Image
+                    src="/sofa.png"
+                    alt="Side Table 2"
+                    width={300}
+                    height={300}
+                    className="rounded-md object-cover"
+                />
+                {/* Caption */}
+                <p className="text-lg font-semibold text-black mt-4">Side Table</p>
+                <p className="text-sm text-[#9F9F9F] cursor-pointer hover:underline">View More</p>
+                {/* Black Line */}
+                <div className="w-14 h-[2px] bg-black mt-4"></div>
+            </div>
+        </div>
+    );
+};
 
 
-const CardDetails = () =>{
-        const data=[
-            {
-                id:1,
-                img:"/sofa.png",
-                title:"Side table",
-                view:"view more",
-                
-            },
-            {
-                id:2,
-                img:"/table.png",
-                title:"Side table",
-                view:"view more",
-            },
-          
-        ]
-    return(
-        <div className='flex  w-[1250px] h-[750px]  ml-[300px] mt-[-10px]'>
-        {data.map((item)=> (
-    
-     <Card
-     key= {item.id}
-     img={item.img}
-     title={item.title}
-     view={item.view}
+
+
+
      
-    ></Card>
-        ))}
-     </div>
-  
-    )
-}
-  export default CardDetails;
+   
 
 
 
   export const Hero = () => {
     return(
 
-        <div className="flex flex-col md:flex-row items-center gap-8 p-8">
+        <div className="flex bg-[#FFF9E5] flex-col md:flex-row items-center gap-8 p-8">
       {/* Left Side - Image */}
       <div className="flex-1">
         <Image
@@ -73,6 +83,91 @@ const CardDetails = () =>{
     </div>
   );
 };
+
+
+
+export const BlogSection = () => {
+    return (
+        <div className="flex flex-col items-center px-4 md:px-20 lg:px-40 py-10 bg-white">
+            {/* Heading */}
+            <h1 className="text-2xl md:text-4xl font-bold text-black text-center mb-4">
+                Our Blog
+            </h1>
+
+            {/* Paragraph */}
+            <p className="text-[#9F9F9F] text-center text-lg md:text-xl mb-8">
+                Find a bright idea to suit your taste with our great selection.
+            </p>
+
+            {/* Image Section */}
+            <div className="flex flex-col md:flex-row gap-6 items-center mb-8">
+                <div className="transition-transform transform hover:scale-105">
+                    <Image
+                        src="/Rectangle 13.png"
+                        alt="Blog 1"
+                        width={500}
+                        height={500}
+                        className="w-72 h-48 object-cover rounded-lg"
+                    />
+                    <p className="text-center mt-4 text-black font-medium">
+                        Going all-in with millennial design
+                    </p>
+                </div>
+                <div className="transition-transform transform hover:scale-105">
+                    <Image
+                        src="/Rectangle 14.png"
+                        alt="Blog 2"
+                        width={500}
+                        height={500}
+                        className="w-72 h-48 object-cover rounded-lg"
+                    />
+                    <p className="text-center mt-4 text-black font-medium">
+                        Going all-in with millennial design
+                    </p>
+                </div>
+                <div className="transition-transform transform hover:scale-105">
+                    <Image
+                        src="/Rectangle 15.png"
+                        alt="Blog 3"
+                        width={500}
+                        height={500}
+                        className="w-72 h-48 object-cover rounded-lg"
+                    />
+                    <p className="text-center mt-4 text-black font-medium">
+                        Going all-in with millennial design
+                    </p>
+                </div>
+            </div>
+
+            {/* Read More */}
+            <p className="text-lg font-medium text-black mb-6 cursor-pointer hover:underline">
+                Read More
+            </p>
+
+            {/* Black Line */}
+            <div className="w-14 h-1 bg-black mb-8"></div>
+
+            {/* Clock and Calendar Section */}
+            <div className="flex flex-col sm:flex-row items-center gap-6">
+                <div className="flex items-center gap-2">
+                    <div className="w-6 h-6 bg-black rounded-full flex items-center justify-center text-white text-xs">
+                        🕒
+                    </div>
+                    <p className="text-[#9F9F9F] text-sm font-medium">5 min</p>
+                </div>
+                <div className="flex items-center gap-2">
+                    <div className="w-6 h-6 bg-black rounded-full flex items-center justify-center text-white text-xs">
+                        📅
+                    </div>
+                    <p className="text-[#9F9F9F] text-sm font-medium">12 Oct 2022</p>
+                </div>
+            </div>
+        </div>
+    );
+};
+
+
+
 
 export const Hero1 = () => {
     return(

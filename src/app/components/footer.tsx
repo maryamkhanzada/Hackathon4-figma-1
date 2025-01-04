@@ -2,43 +2,41 @@ import React from 'react'
 
 const Footer = () => {
     return(
-       
-        <div className='w-[1270px] h-[440px] flex justify-evenly pt-[10%] bg-[#FFFFFF]'>
-         <div>
-            <br />
-            <br />
-            <p className='w-[285px] h-[72px]  font-poppins text-[16px] text-[#9F9F9F]'>400 University Drive Suite 200 Coral Gables,
-            FL 33134 USA</p>
-         </div>
-         <div>
-            <h2 className='text-[#9F9F9F] mb-6 w-[40px] h-[24px] text-[16px] font-poppins wt-sm-w[500]'>Links</h2>
-            <br />
-            <p className=' text-[#000000] w-[48px] h-[24px] font-poppins text-[16px] wt-sm-w[500]'>Home</p>
-            <br />
-            <p className='  text-[#000000] w-[42px] h-[24px] font-poppins text-[16px] wt-sm-w[500]'>Shop</p>
-            <br />
-            <p className= '  text-[#000000] w-[49px] h-[24px] font-poppins text-[16px] wt-sm-w[500]'>About</p>
-            <br />
-            <p className='   text-[#000000] w-[66px] h-[24px] font-poppins text-[16px] wt-sm-w[500]'>Contact</p>
-         </div>
-         <div>
-            <h2 className='  text-[#9F9F9F] w-[37px] h-[24px] font-poppins text-[16px] wt-sm-w[500]'>Help</h2>
-            <br />
-    <p className='  text-[#000000] w-[140px] h-[24px] font-poppins text-[16px] wt-sm-w[500]'>Payment Options</p>
-    <br />
-            <p className='  text-[#000000] w-[62px] h-[24px] font-poppins text-[16px] wt-sm-w[500]'>Returns</p>
-            <br />
-     <p className='  text-[#000000] w-[124px] h-[24px] font-poppins text-[16px] wt-sm-w[500]'>PrivacyPolicies</p>
-         </div>
-         <div>
-            <h2 className='  text-[#9F9F9F] w-[86px] h-[24px] font-poppins text-[16px] wt-sm-w[500]'>Newsletter</h2>
-            <br />
-             <p> <input type="email" placeholder='Enter Your Email Address' className=' text-sm underline w-[173px] h-[21px] text-[14px] text-[#9F9F9F] wt-sm-w[500] font-poppins border-1px' /><span className='text-sm underline w-[75px] h-[21px] font-poppins text-[#000000] text-[14px] wt-sm-w[500]'>SUBSCRIBE</span></p>
-          
-         </div>
+        <div className='w-full h-auto flex flex-col md:flex-row md:justify-evenly items-center pt-[10%] bg-[#FFFFFF]'>
+            <div className='mb-6 md:mb-0'>
+                <p className='w-[285px] h-auto text-center md:text-left font-poppins text-[16px] text-[#9F9F9F]'>
+                    400 University Drive Suite 200 Coral Gables, FL 33134 USA
+                </p>
+            </div>
+            <div className='mb-6 md:mb-0'>
+                <h2 className='text-[#9F9F9F] mb-4 text-center md:text-left font-poppins text-[16px] font-medium'>Links</h2>
+                <p className='text-[#000000] mb-2 text-center md:text-left font-poppins text-[16px] font-medium'>Home</p>
+                <p className='text-[#000000] mb-2 text-center md:text-left font-poppins text-[16px] font-medium'>Shop</p>
+                <p className='text-[#000000] mb-2 text-center md:text-left font-poppins text-[16px] font-medium'>About</p>
+                <p className='text-[#000000] text-center md:text-left font-poppins text-[16px] font-medium'>Contact</p>
+            </div>
+            <div className='mb-6 md:mb-0'>
+                <h2 className='text-[#9F9F9F] mb-4 text-center md:text-left font-poppins text-[16px] font-medium'>Help</h2>
+                <p className='text-[#000000] mb-2 text-center md:text-left font-poppins text-[16px] font-medium'>Payment Options</p>
+                <p className='text-[#000000] mb-2 text-center md:text-left font-poppins text-[16px] font-medium'>Returns</p>
+                <p className='text-[#000000] text-center md:text-left font-poppins text-[16px] font-medium'>Privacy Policies</p>
+            </div>
+            <div className='mb-6 md:mb-0'>
+                <h2 className='text-[#9F9F9F] mb-4 text-center md:text-left font-poppins text-[16px] font-medium'>Newsletter</h2>
+                <div className='flex flex-col items-center md:items-start'>
+                    <input 
+                        type="email" 
+                        placeholder='Enter Your Email Address' 
+                        className='mb-2 w-[200px] text-[14px] text-[#9F9F9F] font-poppins border p-2 outline-none'
+                    />
+                    <button className='text-sm text-[#000000] font-poppins border p-2 bg-[#F5F5F5]'>
+                        SUBSCRIBE
+                    </button>
+                </div>
+            </div>
         </div>
-       
     )
 }
 
 export default Footer;
+

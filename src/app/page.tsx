@@ -1,7 +1,7 @@
 
 import Header from "./components/Header";
 import Footer from "./components/footer";
-import CardDetails, { Hero, Hero1 } from "./components/hero";
+import  { ImageSection,Hero,BlogSection, Hero1 } from "./components/hero";
 
 
 
@@ -9,8 +9,9 @@ export default function Home() {
   return(
 <div>
   <Header/>
-  <CardDetails/>
+  <ImageSection/>
   <Hero/>
+  <BlogSection/>
   <Hero1/>
   <Footer/>
   
