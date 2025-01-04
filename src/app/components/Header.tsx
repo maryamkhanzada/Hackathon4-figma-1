@@ -53,7 +53,7 @@ const Header = () => {
                 {/* Right: Image Section */}
                 <div className="w-full lg:w-auto">
                     <Image
-                        src="/Rocket single seater 1.png "
+                        src="/sofa 1.png "
                         alt="chair"
                         width={200}
                         height={200}
