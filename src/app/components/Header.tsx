@@ -54,7 +54,7 @@ const Header = () => {
                 <div className="w-full lg:w-auto">
                     <Image
                         src="/sofa 1.png"
-                        alt="chair"
+                        alt="sofa"
                         width={200}
                         height={200}
                         className="w-full lg:w-[696px] h-auto"
