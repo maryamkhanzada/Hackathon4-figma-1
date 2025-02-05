@@ -12,10 +12,24 @@
 // export default  nextConfig;
 
 // next.config.js
+// /** @type {import('next').NextConfig} */
+// const nextConfig = {
+//     images: {
+//         domains: ['cdn.sanity.io'],  // Yeh line ensure karein
+//     },
+// };
+
+// export default nextConfig;
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
-        domains: ['cdn.sanity.io'],  // Yeh line ensure karein
+        remotePatterns: [
+            {
+                protocol: 'https',
+                hostname: 'cdn.sanity.io',
+                pathname: '/**',
+            },
+        ],
     },
 };
 

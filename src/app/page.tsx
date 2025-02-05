@@ -70,7 +70,6 @@
 
 // export default Home;
 
-import Shopproducts from "./Products/page";
 import ProductCards from "./Products/page";
 import Header from "./components/Header";
 import Footer from "./components/footer";
@@ -93,3 +92,4 @@ import { ImageSection, Hero, BlogSection, Hero1 } from "./components/hero";
     </div>
   );
 }
+
