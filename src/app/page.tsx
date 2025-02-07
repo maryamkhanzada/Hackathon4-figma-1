@@ -4,6 +4,7 @@ import Footer from "./components/footer";
 import { ImageSection, Hero, BlogSection, Hero1 } from "./components/hero";
 import ProductCards from "./products/page";
  
+ 
 
 export default function Home() {
   return (
