@@ -25,6 +25,15 @@ const Header = () => {
                     <li className="font-poppins text-[16px]">
                         <Link href="../contact">Contact</Link>
                     </li>
+                    <li className="font-poppins text-[16px]">
+                        <Link href="../blog">Blog</Link>
+                    </li>
+                    <li className="font-poppins text-[16px]">
+                        <Link href="../cart">Cart</Link>
+                    </li>
+                    <li className="font-poppins text-[16px]">
+                        <Link href="../checkout">Checkout</Link>
+                    </li>
                 </ul>
 
                 {/* Icon Buttons */}

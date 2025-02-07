@@ -1,105 +1,64 @@
-import React from 'react';
-import Image from 'next/image';
+"use client";
+import React from "react";
 
-const Shop = () => {
-    return (
-        <div>
-        <Image src="/abc1.png" alt="abc" width={1000} height={1000} className="w-[1440px] h-[316px]"/>
+import Image from "next/image";
 
 
-        <div className="py-8 px-4">
-      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8">
-        {/* Image 1 */}
-        <div className="relative  rounded-lg shadow-lg">
-          <Image
-            src="/table1.png" // Replace with your image path
-            alt="table"
-            width={500} // Adjust the width as needed
-            height={300} // Adjust the height as needed
-            className="rounded-t-lg" // To round only the top corners
-          />
-          <div className="p-4 text-center">
-            <p className="mb-4">Trenton modular sofa_3</p>
-            <div className="mt-4 text-xl font-semibold">Rs 25,000.00</div>
+
+function page() {
+  return (
+    <section className="flex flex-col min-h-screen justify-between items-center w-full">
+      <div className="w-full h-[316px] bg-cover bg-center" style={{ backgroundImage: "url('/Rectangle 13.png')" }}>
+        {/* top div */}
+        <div className="flex items-center justify-center h-full">
+          <div className="text-center p-6">
+            <Image src="/abc1.png" alt="Image" width={77} height={77} className="ml-4" />
+            <h1 className="font-poppins font-medium text-[48px] leading-[72px] text-[#000000] md:mb-4">Shop</h1>
+            <div className="flex justify-center items-center">
+              <p className="font-poppins font-medium text-[16px] leading-6 text-[#000000]">Home ... </p>
+              <p className="font-poppins font-light text-[16px] leading-6 text-[#000000] pl-2">Shop</p>
+            </div>
           </div>
         </div>
 
-        {/* Image 2 */}
-        <div className="relative rounded-lg shadow-lg">
-          <Image
-            src="/table2.png" // Replace with your image path
-            alt="table"
-            width={500} // Adjust the width as needed
-            height={300} // Adjust the height as needed
-            className="rounded-t-lg" // To round only the top corners
-          />
-          <div className="p-4 text-center">
-            <p className="mb-4">Granite dining table with dining chair</p>
-            <div className="mt-4 text-xl font-semibold">Rs 25,000.00</div>
-          </div>
-        </div>
+        {/* 2nd div (Image section) */}
+        <div className="mt-4 hidden md:block">
+          <Image src="/table.png" alt="Image" width={100} height={100} />
+          <Image src="/table1.png" alt="Image" width={100} height={100} />
 
-        {/* Image 3 */}
-        <div className="relative  rounded-lg shadow-lg">
-          <Image
-            src="/sideboard 1.png" // Replace with your image path
-            alt="sideboard"
-            width={500} // Adjust the width as needed
-            height={300} // Adjust the height as needed
-            className="rounded-t-lg" // To round only the top corners
-          />
-          <div className="p-4 text-center">
-            <p className="mb-4">Reclaimed teak Sideboard</p>
-            <div className="mt-4 text-xl font-semibold">Rs 25,000.00</div>
-          </div>
-        </div>
-
-        {/* Image 4 */}
-        <div className="relative  rounded-lg shadow-lg">
-          <Image
-            src="/plain5.png" // Replace with your image path
-            alt="plain"
-            width={500} // Adjust the width as needed
-            height={300} // Adjust the height as needed
-            className="rounded-t-lg" // To round only the top corners
-          />
-          <div className="p-4 text-center">
-            <p className="mb-4">Plain console_</p>
-            <div className="mt-4 text-xl font-semibold">Rs 25,000.00</div>
-          </div>
-        </div>
-
-        {/* Image 5 */}
-        <div className="relative  rounded-lg shadow-lg">
-          <Image
-            src="/table3.png" // Replace with your image path
-            alt="table"
-            width={500} // Adjust the width as needed
-            height={300} // Adjust the height as needed
-            className="rounded-t-lg" // To round only the top corners
-          />
-          <div className="p-4 text-center">
-            <p className="mb-4">Outdoor bar table and stool</p>
-            <div className="mt-4 text-xl font-semibold">Rs 25,000.00</div>
-          </div>
         </div>
       </div>
-    </div>
 
+      {/* Products Section */}
+     
 
-
-  
-         
+      {/* Next Page Button Section */}
+      <div className="hidden md:flex flex-col md:flex-row justify-center items-center gap-4 mt-10 mb-6">
+        <button className="bg-[#fbebb5] w-[60px] h-[60px] rounded-[4px] font-poppins font-normal text-[20px] leading-[30px] text-[#000000]">1</button>
+        <button className="bg-[#fff9e5] w-[60px] h-[60px] rounded-[4px] font-poppins font-normal text-[20px] leading-[30px] text-[#000000]">2</button>
+        <button className="bg-[#fff9e5] w-[60px] h-[60px] rounded-[4px] font-poppins font-normal text-[20px] leading-[30px] text-[#000000]">3</button>
+        <button className="bg-[#fff9e5] w-[60px] h-[60px] rounded-[4px] font-poppins font-normal text-[20px] leading-[30px] text-[#000000]">Next</button>
       </div>
-    );
-  }
-  
-  
-  
-  
- 
-  
-  
 
+      {/* Delivery section */}
+      <div className="flex flex-col md:flex-row justify-around items-center mt-10 pt-12 mb-6 w-full px-4 bg-[#faf4f4] h-full md:h-[300px]">
+        <div className="w-[300px] md:w-[376px] h-[108px] text-center md:text-left mb-10 md:mb-0">
+          <h1 className="font-poppins font-medium text-[32px] leading-48px] text-[#000000] mb-4">Free Delivery</h1>
+          <p className="font-poppins font-normal text-[20px] leading-[30px] txet-[#9f9f9f]">For all oders over $50, consectetur adipim scing elit.</p>
+        </div>
 
-export default Shop;
+        <div className="w-[300px] md:w-[376px] h-[108px] text-center md:text-left mb-10 md:mb-0">
+          <h1 className="font-poppins font-medium text-[32px] leading-48px] text-[#000000] mb-4">90 Days Return</h1>
+          <p className="font-poppins font-normal text-[20px] leading-[30px] txet-[#9f9f9f]">If goods have problems, consectetur adipim scing elit.</p>
+        </div>
+
+        <div className="w-[300px] md:w-[376px] h-[108px] text-center md:text-left mb-10 md:mb-0">
+          <h1 className="font-poppins font-medium text-[32px] leading-48px] text-[#000000] mb-4">Secure Payment</h1>
+          <p className="font-poppins font-normal text-[20px] leading-[30px] txet-[#9f9f9f]">100% secure payment, consectetur adipim scing elit.</p>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export default page;

@@ -8,6 +8,7 @@ export default {
         type: 'string',
         title: 'Name',
       },
+      
       {
         name: 'image',
         type: 'image',
@@ -48,4 +49,4 @@ export default {
       },
     ],
   };
-  
+
